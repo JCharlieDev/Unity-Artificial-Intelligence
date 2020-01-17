@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92ce17687e442b4197ed3a2c2318f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objective: {fileID: 1115683827}
+  objective: {fileID: 1115683823}
 --- !u!1 &1115683823 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7520847309526839673, guid: ab36b8f5d79f9fb47abb0a10ae527e00,
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136511434}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1efa5adb50c6efc4d988240bf12e7139, type: 3}
   m_Name: 
@@ -195,6 +195,20 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
+--- !u!114 &1136511436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136511434}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f74b259f57d9244da268888a615709d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToWatch: {fileID: 1115683827}
+  velocity: 7
 --- !u!114 &1136511440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +226,39 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
+--- !u!114 &1136511443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136511434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cc3e187e53dc7439269c2b7ba4bc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToRunFrom: {fileID: 1115683827}
+  velocity: 7
+--- !u!1 &1392415372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7495391670990273863, guid: 6145842ab33d7e44bb5871f0dc4dfa96,
+    type: 3}
+  m_PrefabInstance: {fileID: 7495391671819268043}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1392415373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392415372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eed3789a884204f8530a1bbae38a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1115683827}
 --- !u!1001 &1048842715316044728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -278,6 +325,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048842714172475289, guid: 20cedcb146a90d0429ef18ec25d000f9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048842714172475289, guid: 20cedcb146a90d0429ef18ec25d000f9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20cedcb146a90d0429ef18ec25d000f9, type: 3}
@@ -347,6 +404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258114692848718183, guid: f083d86a04ef2b34ea2b575032dfc93e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083d86a04ef2b34ea2b575032dfc93e, type: 3}
@@ -485,6 +547,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495391670990273861, guid: 6145842ab33d7e44bb5871f0dc4dfa96,
+        type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495391670990273861, guid: 6145842ab33d7e44bb5871f0dc4dfa96,
+        type: 3}
+      propertyPath: orthographic size
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6145842ab33d7e44bb5871f0dc4dfa96, type: 3}

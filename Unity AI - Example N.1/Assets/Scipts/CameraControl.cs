@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public Transform objective;
+    public GameObject objective;
 
+    private Vector3 offset;
+
+    private void Start()
+    {
+        offset = transform.position - objective.transform.position;
+    }
     private void LateUpdate()
     {
-        transform.LookAt(objective);
+        transform.position = objective.transform.position + offset;
     }
 
 }
