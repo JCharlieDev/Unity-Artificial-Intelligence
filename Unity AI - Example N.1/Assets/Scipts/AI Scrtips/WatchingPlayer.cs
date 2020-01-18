@@ -29,6 +29,9 @@ public class WatchingPlayer : MonoBehaviour
         //  Condition where we evaluate if the player is in the AI field of view.
         if (distanceToPlayer <= Mathf.Pow(rangeFOV, 2))
         {
+            //  Draws a line if the player is in range.
+            Debug.DrawLine(transform.position, player.position, color);
+
             //  Vector from AI to player.
             playerDistFromAI = player.position - transform.position;
 
@@ -38,12 +41,11 @@ public class WatchingPlayer : MonoBehaviour
             //  Condition that verifies if the player is in range.
             if (angle <= rangeFOV)
             {
-                Debug.DrawLine(transform.position, playerDistFromAI, Color.white, 100.0f);
+                //  Line of angle detection.
+                Debug.DrawLine(transform.position, player.position, Color.white, 100.0f);
                 isWatching = true;
             }
         }
-
-        Debug.DrawLine(transform.position, playerDistFromAI, color);
 
         if (isWatching)
         {
