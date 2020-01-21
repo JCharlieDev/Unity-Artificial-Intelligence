@@ -20,14 +20,12 @@ public class Interception : MonoBehaviour
     private float interceptionTime;
 
     public float velocity = 5;
-    // Start is called before the first frame update
     void Start()
     {
         aiPreviousPos = transform.position;
         playerPreviousPos = player.transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         //  AI velocity vector calculation.
